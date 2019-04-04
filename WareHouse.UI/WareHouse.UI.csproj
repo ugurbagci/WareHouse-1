@@ -96,6 +96,7 @@
   <ItemGroup>
     <Content Include="Content\css\AdminLTE.min.css" />
     <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\dataTables.bootstrap.min.css" />
     <Content Include="Content\css\font-awesome.min.css" />
     <Content Include="Content\css\ionicons.min.css" />
     <Content Include="Content\css\_all-skins.min.css" />
@@ -104,8 +105,10 @@
     <Content Include="Content\fonts\ionicons.svg" />
     <Content Include="Content\script\adminlte.min.js" />
     <Content Include="Content\script\bootstrap.min.js" />
+    <Content Include="Content\script\dataTables.bootstrap.min.js" />
     <Content Include="Content\script\demo.js" />
     <Content Include="Content\script\fastclick.js" />
+    <Content Include="Content\script\jquery.dataTables.min.js" />
     <Content Include="Content\script\jquery.min.js" />
     <Content Include="Content\script\jquery.slimscroll.min.js" />
     <Content Include="Global.asax" />
@@ -115,7 +118,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\BaseController.cs" />
-    <Compile Include="Areas\Admin\Controllers\CatergoryController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Models\DTO\BaseDTO.cs" />
     <Compile Include="Areas\Admin\Models\DTO\CategoryDTO.cs" />
@@ -141,7 +144,8 @@
     <Content Include="Content\fonts\fontawesome-webfont.woff2" />
     <Content Include="Content\fonts\FontAwesome.otf" />
     <Content Include="Areas\Admin\Views\Home\AdminHomeIndex.cshtml" />
-    <Content Include="Areas\Admin\Views\Catergory\AddCategory.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\AddCategory.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\CategoryList.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

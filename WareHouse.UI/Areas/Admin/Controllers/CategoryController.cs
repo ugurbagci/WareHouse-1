@@ -8,9 +8,8 @@ using WareHouse.UI.Areas.Admin.Models.DTO;
 
 namespace WareHouse.UI.Areas.Admin.Controllers
 {
-    public class CatergoryController : BaseController
+    public class CategoryController : BaseController
     {
-        
         public ActionResult AddCategory()
         {
             return View();
@@ -26,12 +25,24 @@ namespace WareHouse.UI.Areas.Admin.Controllers
                 category.CategoryDescription = model.CategoryDescription;
                 db.Categories.Add(category);
                 db.SaveChanges();
-                return Redirect("Admin/Category/CategoryList");
+                return Redirect("/Admin/Category/CategoryList");
             }
             else
             {
-                return View();
+                return Redirect("/Admin/Category/CategoryList");
             }
+        }
+
+        public ActionResult CategoryList()
+        {
+            List<CategoryDTO> model = db.Categories.Where(x => x.Status == WareHouse.Model.Enum.Status.Active || x.Status == WareHouse.Model.Enum.Status.Updated).Select(x => new CategoryDTO
+            {
+                ID = x.ID,
+                CategoryName = x.CategoryName,
+                CategoryDescription = x.CategoryDescription
+            }).ToList();
+
+            return View(model);
         }
     }
 }
