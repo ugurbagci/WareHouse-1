@@ -146,6 +146,7 @@
     <Content Include="Areas\Admin\Views\Home\AdminHomeIndex.cshtml" />
     <Content Include="Areas\Admin\Views\Category\AddCategory.cshtml" />
     <Content Include="Areas\Admin\Views\Category\CategoryList.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\UpdateCategory.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
