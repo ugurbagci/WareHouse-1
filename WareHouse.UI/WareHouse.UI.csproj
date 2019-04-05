@@ -95,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\AdminLTE.min.css" />
+    <Content Include="Content\css\blue.css" />
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\dataTables.bootstrap.min.css" />
     <Content Include="Content\css\font-awesome.min.css" />
@@ -108,6 +109,7 @@
     <Content Include="Content\script\dataTables.bootstrap.min.js" />
     <Content Include="Content\script\demo.js" />
     <Content Include="Content\script\fastclick.js" />
+    <Content Include="Content\script\icheck.min.js" />
     <Content Include="Content\script\jquery.dataTables.min.js" />
     <Content Include="Content\script\jquery.min.js" />
     <Content Include="Content\script\jquery.slimscroll.min.js" />
@@ -117,6 +119,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AccountController.cs" />
     <Compile Include="Areas\Admin\Controllers\AppUserController.cs" />
     <Compile Include="Areas\Admin\Controllers\BaseController.cs" />
     <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
@@ -125,6 +128,7 @@
     <Compile Include="Areas\Admin\Models\DTO\CategoryDTO.cs" />
     <Compile Include="Areas\Admin\Models\DTO\UserDTO.cs" />
     <Compile Include="Areas\Admin\Models\Message\TransactionMessage.cs" />
+    <Compile Include="Areas\Admin\Models\VM\LoginVM.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -154,6 +158,7 @@
     <Content Include="Areas\Admin\Views\Category\Partial\CategoryForm.cshtml" />
     <Content Include="Areas\Admin\Views\Category\Partial\SectionForm.cshtml" />
     <Content Include="Areas\Admin\Views\AppUser\AddUser.cshtml" />
+    <Content Include="Areas\Admin\Views\Account\UserLogin.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -164,7 +169,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Models\VM\" />
     <Folder Include="Areas\Admin\Views\Base\" />
     <Folder Include="Content\image\" />
     <Folder Include="Controllers\" />
