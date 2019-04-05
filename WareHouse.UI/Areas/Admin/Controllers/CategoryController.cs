@@ -25,11 +25,13 @@ namespace WareHouse.UI.Areas.Admin.Controllers
                 category.CategoryDescription = model.CategoryDescription;
                 db.Categories.Add(category);
                 db.SaveChanges();
-                return Redirect("/Admin/Category/CategoryList");
+                ViewBag.ProcessCondition = 1;
+                return View();
             }
             else
             {
-                return Redirect("/Admin/Category/CategoryList");
+                ViewBag.ProcessCondition = 2;
+                return View();
             }
         }
 

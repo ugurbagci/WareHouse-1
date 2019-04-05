@@ -117,11 +117,13 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AppUserController.cs" />
     <Compile Include="Areas\Admin\Controllers\BaseController.cs" />
     <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Models\DTO\BaseDTO.cs" />
     <Compile Include="Areas\Admin\Models\DTO\CategoryDTO.cs" />
+    <Compile Include="Areas\Admin\Models\Message\TransactionMessage.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -147,6 +149,9 @@
     <Content Include="Areas\Admin\Views\Category\AddCategory.cshtml" />
     <Content Include="Areas\Admin\Views\Category\CategoryList.cshtml" />
     <Content Include="Areas\Admin\Views\Category\UpdateCategory.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\Partial\FormMessage.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\Partial\CategoryForm.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\Partial\SectionForm.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -158,6 +163,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\VM\" />
+    <Folder Include="Areas\Admin\Views\AppUser\" />
     <Folder Include="Areas\Admin\Views\Base\" />
     <Folder Include="Content\image\" />
     <Folder Include="Controllers\" />
