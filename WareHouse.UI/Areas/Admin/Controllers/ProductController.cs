@@ -69,6 +69,7 @@ namespace WareHouse.UI.Areas.Admin.Controllers
             model.Product.UnitsInStock = product.UnitsInStock;
 
            List<Category> categorymodel = db.Categories.Where(x => x.Status == Model.Enum.Status.Active || x.Status == Model.Enum.Status.Updated).ToList();
+
             model.Categories = categorymodel;
             return View(model);
         }
