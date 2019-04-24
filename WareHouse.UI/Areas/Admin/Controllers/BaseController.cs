@@ -4,9 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using WareHouse.DAL.Context;
+using WareHouse.UI.Areas.Admin.Models.Attributes;
 
 namespace WareHouse.UI.Areas.Admin.Controllers
 {
+    [LoginControl]
     public class BaseController : Controller
     {
         public ProjectContext db;

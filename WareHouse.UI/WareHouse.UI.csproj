@@ -125,6 +125,7 @@
     <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
+    <Compile Include="Areas\Admin\Models\Attributes\LoginControl.cs" />
     <Compile Include="Areas\Admin\Models\DTO\BaseDTO.cs" />
     <Compile Include="Areas\Admin\Models\DTO\CategoryDTO.cs" />
     <Compile Include="Areas\Admin\Models\DTO\ProductDTO.cs" />
