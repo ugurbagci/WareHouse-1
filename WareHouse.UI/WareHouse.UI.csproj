@@ -104,6 +104,7 @@
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\fonts\ionicons.svg" />
+    <Content Include="Content\image\delete.png" />
     <Content Include="Content\script\adminlte.min.js" />
     <Content Include="Content\script\bootstrap.min.js" />
     <Content Include="Content\script\dataTables.bootstrap.min.js" />
@@ -179,7 +180,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Views\Base\" />
-    <Folder Include="Content\image\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>

@@ -39,11 +39,12 @@
                         <tbody>
                             @foreach (var item in Model)
                             {
-                                <tr>
+                                <tr id="a_@item.ID">@*satırın item*@
                                     <td>@item.CategoryName</td>
                                     <td>@item.CategoryDescription</td>
                                     <td><a href="/Admin/Category/UpdateCategory/@item.ID" type="button" class="btn btn-block btn-warning">Update</a></td>
                                     <td><a href="/Admin/Category/DeleteCategory/@item.ID" type="button" class="btn btn-block btn-danger">Delete</a></td>
+                                    <td><img src="~/Content/image/delete.png" width="30" height="30" style="cursor:pointer" onclick="Delete(@item.ID)"/></td>
                                 </tr>
                             }
                         </tbody>
@@ -53,6 +54,19 @@
         </div>
     </div>
 </section>
+
+<script>
+    function Delete(id) {
+        $.ajax({
+            url: "/Admin/Category/DeleteCategory" + id,
+            //data:id,
+            type: "POST",
+            success: function (result) {
+                $("#a_" + id).fadeOut();
+            }
+        });
+    }
+</script>
 
 <script>
     $(function () {

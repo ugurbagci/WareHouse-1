@@ -90,5 +90,15 @@ namespace WareHouse.UI.Areas.Admin.Controllers
             }
             return Redirect("/Admin/Category/CategoryList");
         }
+
+
+        //public JsonResult DeleteCategory(int id)
+        //{
+        //    Category category = db.Categories.FirstOrDefault(x => x.ID == id);
+        //    category.Status = Model.Enum.Status.Deleted;
+        //    category.DeleteDate = DateTime.Now;
+        //    db.SaveChanges();
+        //    return Json("");
+        //}
     }
 }
